@@ -54,7 +54,34 @@ def mainFunction():
     output_data = []
     for pr in parkruns_to_search:
 
-            #### note that this is a country specific URL, if you are not in NZ, CHANGE THE URL!!!
+            #### note that this is a country specific URL, if you are not in NZ, CHANGE THE URL as follows!!! 
+            ### This code has not been tested in non english websites but should work in 
+            # https://www.parkrun.co.nz  // tested
+
+            # https://www.parkrun.org.uk
+            # https://www.parkrun.ca
+            # https://www.parkrun.co.za
+            # https://www.parkrun.com.au
+            # https://www.parkrun.us
+            # http://www.parkrun.my
+            # https://www.parkrun.sg
+
+            # it MAY work in 
+            # http://www.parkrun.lt
+            # https://www.parkrun.co.at
+            # https://www.parkrun.co.nl
+            # https://www.parkrun.com.de
+            # https://www.parkrun.dk
+            # https://www.parkrun.fi
+            # https://www.parkrun.ie
+            # https://www.parkrun.it
+            # https://www.parkrun.no
+            # https://www.parkrun.pl
+            # https://www.parkrun.se
+
+            # I suspect it will crash and burn in any character based language (Japanese / Chinese).     
+            # https://www.parkrun.jp
+
             url = "https://www.parkrun.co.nz/"+str(pr)+"/results/latestresults/"
             print("Now doing \n"+str(pr))
 
